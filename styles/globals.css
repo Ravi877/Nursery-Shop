@@ -1,0 +1,21 @@
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    /* CHANGED: Using the new 'nature-cream' from your new config */
+    @apply bg-nature-cream text-gray-800;
+  }
+}
+
+/* Optional: Slide-in animation for the cart */
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.3s ease-out forwards;
+}
